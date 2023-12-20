@@ -21,7 +21,7 @@ From Github, they can be cloned.
 I cloned them in /home/user/SU2.
 ```
 $ git clone https://github.com/su2code/Tutorials
-$ git clone https://github.com/su2code/TetsCases.git
+$ git clone https://github.com/su2code/TestCases.git
 ```
 
 # Quick start 
