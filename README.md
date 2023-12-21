@@ -135,3 +135,18 @@ $ paraview flow.vtu
 ```
 ![Mach contour](https://github.com/waku2011/SU2_Tutorials/assets/10591304/65ea27c8-6aee-4ff3-a59f-c777226d98e9)
 
+# make mesh via GMSH
+SU2 can use SU2 native format (.su2) and CGNS format [as stated in user guide](https://su2code.github.io/docs_v7/Mesh-File/).
+SU2 native format is simple and easy to understand, also SU2 provides python, cpp and fortran sample programs to make simple mesh blocks. 
+Here, I'll explore how to mesh using GMSH, which can export mesh in SU2 native format.
+
+## sample CAD data (.step)
+I made STEP file including farfield and solid using SolidWorks. farfield is a sphere of radius 10m as far boundary,
+solid is something flying obstacle (wing-like?) at the center of spherical volume as bellow.
+
+![image](https://github.com/waku2011/SU2_Tutorials/assets/10591304/e00a9df5-166d-4e85-9ab8-5026917d27c2)
+
+## read STEP file
+- read the step files from GMSH
+- mesh 3D
+- export mesh as SU2 
