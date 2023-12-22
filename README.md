@@ -146,7 +146,8 @@ solid is something flying obstacle (wing-like?) at the center of spherical volum
 
 ![image](https://github.com/waku2011/SU2_Tutorials/assets/10591304/e00a9df5-166d-4e85-9ab8-5026917d27c2)
 
-## read STEP file
-- read the step files from GMSH
-- mesh 3D
-- export mesh as SU2 
+## read STEP file and make mesh
+- read the STEP files from GMSH
+- add physycal surface and volume group in Geometry module
+- mesh via mesh module (3D with some optimization) or 2D then 3D
+- export mesh from Export menu in SU2 format 
